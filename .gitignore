@@ -11,5 +11,6 @@ coverage.xml
 build/
 dist/
 site/
+venv/
 src/wagtailbakery/build/
 src/wagtailbakery/tests/public/
