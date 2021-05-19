@@ -43,7 +43,8 @@ jobs:
         run: |
           tox --py current
           coveralls
-
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         # This step runs only for jobs in the include matrix and covers linting
       - name: Run tox targets for Python ${{ matrix.python }} (${{ matrix.toxenv }})
         if: ${{ matrix.toxenv != 'py' }}
@@ -51,4 +52,3 @@ jobs:
           tox -e ${{ matrix.toxenv }}
         env:
           TOXENV: ${{ matrix.toxenv }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
