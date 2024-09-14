@@ -3,6 +3,7 @@ __pycache__/
 .cache/
 .tox/
 .coverage
+.coverage.*
 .DS_Store
 .python-version
 *.egg-info/

@@ -163,7 +163,7 @@ Test as follow:
 ### Releases
 
 1. Create a new branch (e.g. `release/1.1.3`) for the release of the new version.
-1. Update the version number in `setup.py` following [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+1. Update the version number in `pyproject.toml` following [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 1. Update `CHANGELOG.md`.
 1. On GitHub, create a pull request and squash merge it.
 1. On GitHub, if this is a minor release bump (for example `1.1.0` or `1.2.0` but not `1.1.1`, `1.2.3`), create a `stable/1.1.x` branch from `main`.
@@ -178,6 +178,8 @@ Test as follow:
 1. On GitHub, create a release and a tag for the new version.
 
 ## Credits
+
+`wagtail-bakery` was originally developed by [Rob Moorman](https://github.com/robmoorman) and is now maintained by the Wagtail Nest team.
 
 Thanks to [@mhnbcu](https://github.com/mhnbcu/wagtailbakery) for bringing this
 idea up initially, and [Django Bakery](https://github.com/datadesk/django-bakery)
