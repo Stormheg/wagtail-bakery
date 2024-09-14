@@ -8,7 +8,9 @@ __pycache__/
 *.egg-info/
 *.py[cod]
 coverage.xml
+htmlcov/
 build/
 dist/
+venv/
 src/wagtailbakery/build/
 src/wagtailbakery/tests/public/
