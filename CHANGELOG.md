@@ -9,8 +9,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
-- Compatibility with Wagtail 6.0 and 6.1. [#95](https://github.com/wagtail-nest/wagtail-bakery/pull/95)
-- Compatibility with Django 5.0. [#95](https://github.com/wagtail-nest/wagtail-bakery/pull/95)
+- Compatibility with Python 3.13 and 3.14.
+- Compatibility with Django 5.2 and 6.0.
+- Compatibility with Wagtail 7.0, 7.3 LTS, and 7.4.
+- Switch `setup.py` to `pyproject.toml`.
+- Added back coverage reporting.
 
 ### Fixed
 
@@ -19,8 +22,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Removed
 
-- Drop support for Wagtail before 5.2. [#95](https://github.com/wagtail-nest/wagtail-bakery/pull/95)
-- Drop support for Django before 4.2. [#95](https://github.com/wagtail-nest/wagtail-bakery/pull/95)
+- Drop support for Python before 3.10.
+- Drop support for Django before 5.2.
+- Drop support for Wagtail before 7.0.
 
 ## [0.8.0](https://github.com/wagtail-nest/wagtail-bakery/compare/0.7.0...0.8.0)
 
