@@ -43,6 +43,9 @@ test = [
     "pytest-cov",
     "pytest-django",
     "pytest",
+    # `fs` (transitive via django-bakery) still calls pkg_resources.declare_namespace,
+    # which setuptools 81+ removed. Pin until PyFilesystem2 ships a fix.
+    "setuptools<81",
 ]
 
 [project.urls]
