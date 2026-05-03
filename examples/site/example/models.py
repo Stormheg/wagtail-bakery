@@ -6,16 +6,11 @@ from wagtail.models import Page
 
 class AbstractExamplePage(Page):
     body = StreamField(
-        [
-            ('paragraph', blocks.RichTextBlock())
-        ],
+        [("paragraph", blocks.RichTextBlock())],
         use_json_field=True,
     )
 
-    content_panels = [
-        FieldPanel('title'),
-        FieldPanel('body')
-    ]
+    content_panels = [FieldPanel("title"), FieldPanel("body")]
 
     class Meta:
         abstract = True
