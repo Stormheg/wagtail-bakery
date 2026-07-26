@@ -30,9 +30,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install .[test]
-      - name: Run linting
-        run: |
-          make format
+      - name: Run pre-commit hooks
+        uses: j178/prek-action@5337cb91e0fa35a7ff31b9ca345126d8bbbcdf16 # v2.0.6
   test:
     name: Python ${{ matrix.python}} ${{ matrix.toxenv }}
     runs-on: ubuntu-latest
