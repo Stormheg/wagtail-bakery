@@ -44,7 +44,7 @@ jobs:
         include:
           # Future Wagtail release from main branch (allowed to fail)
           - python: "3.15"
-            toxenv: wagtailmain
+            toxenv: future
             experimental: true
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
