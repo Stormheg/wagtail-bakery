@@ -57,15 +57,22 @@ urls.Source = "https://github.com/wagtail-nest/wagtail-bakery/"
 [tool.setuptools]
 packages.find.where = [ "src" ]
 
-[tool.black]
-line-length = 88
-
-[tool.isort]
-line_length = 88
-multi_line_output = 3
-use_parentheses = true
-include_trailing_comma = true
-force_grid_wrap = 0
+[tool.ruff]
+target-version = "py310"  # minimum target version
+exclude = [
+  ".github",
+]
+lint.select = [
+  "BLE", # flake8-blind-except
+  "C4",  # flake8-comprehensions
+  "E",   # pycodestyle errors
+  "F",   # pyflakes
+  "I",   # isort
+  "T20", # flake8-print
+  "UP",  # pyupgrade
+]
+# E501: Line too long
+lint.ignore = [ "E501" ]
 
 [tool.pytest]
 ini_options.testpaths = [ "tests" ]
