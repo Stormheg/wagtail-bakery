@@ -32,8 +32,8 @@ If you want to send an encrypted email (optional), the public key ID for securit
 
 ## Supported Versions
 
-- Python 3.10 - 3.14
-- Django 5.2 - 6.0
+- Python 3.10 - 3.15
+- Django 5.2 - 6.1
 - Wagtail >= 7.0
 
 We aim to support the Wagtail versions as [supported](http://docs.wagtail.org/en/latest/releases/upgrading.html) by Wagtail (current LTS, current stable).

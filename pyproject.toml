@@ -18,6 +18,7 @@ classifiers = [
   "Framework :: Django",
   "Framework :: Django :: 5.2",
   "Framework :: Django :: 6.0",
+  "Framework :: Django :: 6.1",
   "Framework :: Wagtail",
   "Framework :: Wagtail :: 7",
   "Operating System :: OS Independent",
@@ -35,13 +36,8 @@ dependencies = [
   "wagtail>=7",
 ]
 optional-dependencies.test = [
-  "black>=26,<27",
-  "coverage[toml]>=7.13.5,<8",
+  "coverage[toml]",
   "factory-boy",
-  "flake8",
-  "flake8-black",
-  "flake8-isort",
-  "isort",
   "pytest",
   "pytest-cov",
   "pytest-django",
@@ -76,6 +72,9 @@ lint.ignore = [ "E501" ]
 
 [tool.pytest]
 ini_options.testpaths = [ "tests" ]
+ini_options.filterwarnings = [
+  "ignore:.*Deprecated call to `pkg_resources.declare_namespace('fs')",
+]
 
 [tool.coverage]
 run.branch = true
