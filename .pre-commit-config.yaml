@@ -38,7 +38,7 @@ repos:
     rev: "v2.25.3"
     hooks:
       - id: pyproject-fmt
-        args: ["--max-supported-python=3.15"]
+        args: ["--max-supported-python=3.14"]
         language_version: python3.14
   - repo: https://github.com/adamchainz/django-upgrade
     rev: "1.31.1"
